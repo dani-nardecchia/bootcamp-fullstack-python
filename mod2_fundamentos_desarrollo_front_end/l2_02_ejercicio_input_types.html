@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div>
+            <h1>Pagina de ejemplo para curso HTML</hi>
+            <h2>Seccion de introduccion</h2>
+            <p>Esta es una pagina de ejemplo creada para demostrar elementos HTML basicos sin usar CSS.</p>
+            <h3>Formulario de contacto completo</h3>
+        </div>
+
+  <form action="#" method="post">
+        <!--Aca ingreso un input de texto-->
+        <label for="name">Nombre completo:</label>
+        <input type="text" id="name" name="nombre"/>
+        
+        <div>
+            <label for="email">Correo electronico:</label>
+            <input type="text" id="email" name="correo"/>
+        </div>
+        <div>
+            <label for="age">Edad:</label>
+            <input type="text" id="age" name="edad"/>
+        </div>
+        <div>
+            <!--Aca ingreso un input de fecha-->
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" id="date" name="fecha"/>
+        </div>
+        <div>
+            <label for="phone">Télefono:</label>
+            <input type="text" id="phone" name="telefono"/>
+        </div>
+        <div>
+            <!-- Añadiremos una lista desplegable!-->
+             <select name="select" id="country">
+                <option value="value1">Seleccione país</option>
+                <option value="value1">Chile</option>
+                <option value="value2">España</option>
+                <option value="value3">Alemania</option>
+                <option value="value4">EEUU</option>
+            </select> 
+        </div>
+        </div>
+        <!--Aca ingresamos los radio, solo puedo elegir uno! -->
+        <p>Genero:</p>
+        <input type="radio" id="gender" name="genero"/>Masculino
+        <input type="radio" id="gender" name="genero"/>Femenino
+        <input type="radio" id="gender" name="genero"/>Otro
+        
+        <div>
+            <!--Aca ingresamos los checkboxes, se puede elegir mas de uno-->
+            <p>Intereses:</p>
+            <label for="check_l">Lectura</label>
+            <input type="checkbox" id="check_l" name="leer">
+            
+            <label for="check_t">Tecnologia</label>
+            <input type="checkbox" id="check_t" name="tecnologia"/>
+            
+            <label for="check_m">Musica</label>
+            <input type="checkbox" id="check_m" name="musica"/>
+            
+            <label for="check_d">Deportes</label>
+            <input type="checkbox" id="check_d" name="deportes"/>
+        </div>
+        
+        <!--Aca elegimos un color -->
+        <label for="colour">Color favorito:</label>
+        <input type="color" id="colour">
+        
+        <div>
+            <!--Aca añadimos un slider -->
+            <label for="satisfaction">Nivel de satisfaccion (1 - 10):</label>
+            <input type="range" min="1" max="10" id="satisfaction">
+        </div>
+        <div>
+            <!--Aca subiremos un archivo -->
+            <label for="file">Subir archivo:</label>
+            <input type="file" id="file" name="myfile">
+        </div>
+        <div>
+            <!--Aca creamos una caja de comentarios -->
+            <label for="comments">Comentarios adicionales:</label>
+            <textarea id="comments" name="comentarios" rows="5" cols="40"></textarea>
+        </div>
+        <div>
+            <!--Aca ingreso un input de password, no se ve cuando se escribe!-->
+            <label for="password">Ingrese su clave:</label>
+            <input type="password" id="password" name="clave"/>
+        </div>
+        
+        <!--Aca ingreso un input de texto-->
+        <label for="website">Sitio web personal:</label>
+        <input type="text" id="website" name="pagina_web"/>
+
+        <div>
+            <!--Aca ingreso una hora-->
+            <label for="time">Hora preferida de contacto:</label>
+            <input type="time" id="time" name="hora_contacto"/>
+        </div>
+        <div>
+            <!--Aca ingreso una semana del año-->
+            <label for="week">Semana del año:</label>
+            <input type="week" id="week" name="semana"/>
+        </div>
+        <div>
+            <!--Aca ingreso una busqueda-->
+            <label for="search">Búsqueda:</label>
+            <input type="search" id="search" name="busqueda"/>
+        </div>
+        <div>
+            <label for="check_t">Acepto los terminos y condiciones</label>
+            <input type="checkbox" id="check_t" name="terminos">
+        </div>
+        <div>
+            <h2>Seccion final</h2>
+            <p>Este es el final de la pagina de ejemplo. Todos los elementos se muestran en su estado natural sin estilos CSS.</p>
+        </div>
+  </form>
+</body>
+</html>
