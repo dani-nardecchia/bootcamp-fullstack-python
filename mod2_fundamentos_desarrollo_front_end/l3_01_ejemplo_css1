@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h1{color: rebeccapurple;
+        text-align: center;
+        }
+
+        p {font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;  /*--También puede ser en px */
+            text-align: center;
+      }
+      
+      .fondo-imagen{
+        background-image: url("data:image/webp;base64,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");
+        background-repeat:repeat;
+        border-style: double;
+        padding:50px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Este es un título</h1>
+    <p>Este es un párrafo</p>
+  <div class="fondo-imagen">
+      <p>
+        Esto es un texto de relleno, me dio flojera copiar el lorem ipsum. 
+      </p>  
+  </div>
+</body>
+</html>
