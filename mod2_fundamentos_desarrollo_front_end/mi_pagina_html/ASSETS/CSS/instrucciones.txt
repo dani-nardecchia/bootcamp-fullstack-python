@@ -1,7 +1,3 @@
-Lección 3, Ejercicio 1
-Utilizando el mismo proyecto de la lección 2, crear un archivo de hoja de estilos en la carpeta
-«CSS» llamado «styles.css»
-
 Lección 3, Ejercicio 2
 Se requiere que el color de fondo del cuerpo completo del documento sea cambiado a «lightblue»
 
