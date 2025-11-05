@@ -1,5 +1,0 @@
-Nuestra página debe ser un texto informativo que incluya una imagen de apoyo. Para esto
-crearemos la carpeta ASSETS y dentro de esta una carpeta de nombre «IMG» en donde se
-almacenará una imagen relacionada con el texto y que posteriormente se deberá integrar al
-documento HTML donde corresponda, accediendo mediante la ruta local. Además, crearemos otra
-carpeta dentro de ASSETS llamada «CSS» donde luego crearemos nuestra hoja de estilos.
