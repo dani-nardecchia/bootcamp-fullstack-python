@@ -1,1 +1,40 @@
+body {
+    margin:0; 
+    padding:0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+header{
+    width: 100%;
+    height: 60px;    
+}
+
+/*usar dos etiquetas juntas indica que
+las caracteristicas de CSS se aplicaran solo a la 
+etiqueta nav dentro del header*/
+header nav{
+    /*con esto se adapta al dispositivo*/
+    display:flex;
+    justify-content: flex-end; 
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    /*los centra respecto de su contenedor, no toda la pagina*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px;
+    color:black;
+}
