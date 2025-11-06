@@ -1,1 +1,15 @@
+body{
+    background-color:cornflowerblue
+}
 
+h1, h2, h3{
+  color:floralwhite;
+}
+
+article img .image-style{
+  width:400px;
+  height:300px;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+}
