@@ -34,7 +34,54 @@ header nav .nav-right-section{
     align-items: center;
 }
 
-nav .nav-right-section a{
+nav .nav-right-section a {
     margin-right: 10px;
     color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input {
+    width: 560px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 540px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    /* los dos puntos antes de la ruta se usan para decirle que suba
+    de la carpeta CSS donde ta el archivo css a la carpeta donde ta CSS 
+    e img */
+    /* un solo punto indica esta carpeta ./ dos q suba una ../ y
+    ../../ que suba dos carpetas*/
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
 }
