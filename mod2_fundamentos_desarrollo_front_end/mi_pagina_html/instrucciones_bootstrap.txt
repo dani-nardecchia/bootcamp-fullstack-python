@@ -1,0 +1,22 @@
+1) Incorpora Bootstrap por CDN en tu documento. Verifica que cargue correctamente.
+
+2) Envuelve el contenido dentro de un container para lograr márgenes y alineación coherentes.
+
+3) Agrega una navbar superior con el título del sitio y 2 enlaces (pueden ser ficticios).
+
+4) (Investiga y aplica): investiga brevemente en la documentación de Bootstrap qué es una sección
+destacada tipo “hero” (en versiones anteriores se llamaba Jumbotron. Luego crea una sección
+destacada con un título y un párrafo llamativo.
+
+5) Reemplaza estilos manuales del Ejercicio 3 por clases/utilidades de Bootstrap para:
+a. Fondo claro similar a “lightblue”. Si necesitas el tono exacto, mantén una regla mínima
+en /ASSETS/CSS.
+b. Títulos en rojo (aplícalo a todos los encabezados usados).
+c. Imagen principal centrada y visible a 400×300 px. Si la proporción original difiere, deja
+una nota breve indicando cómo lo resolviste.
+
+6) Añade un botón de acción debajo de la imagen y una alerta (informativa o de éxito) para
+comunicar un estado simple del sitio.
+
+7) Revisa en el navegador con el modo dispositivo de las herramientas de desarrollador y confirma
+que la página se vea correctamente.
