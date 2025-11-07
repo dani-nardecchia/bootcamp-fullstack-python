@@ -24,10 +24,93 @@
             <div class="col">Col 4</div>
             </div>
 
-            </div>
-
+  <div class="row">
+            <!--colocando col-numero decimos el ancho de la columna-->
+            <div class="col-3 bg-primary">Col 3</div>
+            <div class="col-6 bg-success">Col 6</div>
+            <div class="col-3 bg-primary">Col 3</div>
         </div>
 
-    </div>
+        <div class="row">
+            <!--para lo mas chico, usa 12 col, para algo mediano usa 6
+            y para algo mas grande usa solo 3 columnas-->
+            <div class="col-12 col-md-6 col-xxl-3 bg-success">
+                <p>Esto es un texto para que tenga algo mi pagina.</p>
+            </div>
+            
+            <!--aca creo otra igual, en pantalla grande se veran como dos tercios
+            en la pantalla mas chica, una arriba del otro-->
+            <div class="col-12 col-md-6 col-xxl-3 bg-info">
+                <p>Esto es un texto para que tenga algo mi pagina.
+                    Aca creo otra igual, en pantalla grande se veran como dos tercios
+            en la pantalla mas chica, una arriba del otro
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-6 col-xxl-3 bg-secondary">
+                <p>Esto es un texto para que tenga algo mi pagina.
+                    Aca creo otra igual, en pantalla grande se veran como dos tercios
+                    en la pantalla mas chica, una arriba del otro</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-xxl-3 bg-info">
+                <p>Agregue otra row para poder tener texto en los
+                    cuatro cuartos de mi pantalla :)
+                </p>
+            </div>
+
+            <div class="row">
+                <!--queremos mostrar 3 celditas, porque es col-4?
+                porque tenemos q dividir 12/4! y muestra 3-->
+                
+                <!--con el col-4 solo decimos esto mide 1/3
+                y dsps le digo quiero 3 de estos repitiendo el codigo-->
+                <div class="col-4 bg-primary">
+                    <p>Celditas</p>
+                </div>
+                 <div class="col-4 bg-primary">
+                    <p>Celditas</p>
+                </div>
+                 <div class="col-4 bg-primary">
+                    <p>Celditas</p>
+                </div>
+            
+            
+            <div class="row">
+                <!--queremos mostrar 3 celditas, porque es col-4?
+                porque tenemos q dividir 12/4! y muestra 3-->
+                
+                <!--con el col-4 solo decimos esto mide 1/3
+                y dsps le digo quiero 3 de estos repitiendo el codigo-->
+                <div class="col-12 col-md-4 col-xxl-4 bg-info">
+                    <p>Celditas</p>
+                </div>
+
+                 <div class="col-12 col-md-4 col-xxl-4 bg-info">
+                    <p>Celditas</p>
+                </div>
+
+                 <div class="col-12 col-md-4 col-xxl-4 bg-info">
+                    <p>Celditas</p>
+                </div>
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-xxl-4 bg-danger">
+                    <p>Celditas</p>
+                </div>
+
+                 <div class="col-12 col-md-12 col-xxl-4 bg-danger">
+                    <p>Celditas</p>
+                </div>
+
+                 <div class="col-12 col-md-12 col-xxl-4 bg-danger">
+                    <p>Celditas</p>
+                </div>
+            </div>
+</div>
 </body>
 </html>
+
+
+
+  
