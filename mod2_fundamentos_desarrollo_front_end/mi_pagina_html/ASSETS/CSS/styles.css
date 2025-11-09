@@ -1,15 +1,17 @@
-body{
-    background-color:cornflowerblue
+.bg-light-blue{
+    background-color:#ADD8E6
 }
 
-h1, h2, h3{
-  color:floralwhite;
+
+h1, h2, h3, h4, h5{
+  color:purple;
 }
 
+/*This is no longer in use
 article img .image-style{
   width:400px;
   height:300px;
   margin:auto;
   justify-content: center;
   align-items: center;
-}
+}*/
