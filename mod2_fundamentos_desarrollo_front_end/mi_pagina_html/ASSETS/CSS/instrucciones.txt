@@ -1,9 +1,0 @@
-Lección 3, Ejercicio 2
-Se requiere que el color de fondo del cuerpo completo del documento sea cambiado a «lightblue»
-
-Lección 3, Ejercicio 3
-Los títulos deben ser modificados para que la fuente sea de color rojo
-
-Lección 3, Ejercicio 4
-Para la imagen que incluimos previamente en la práctica #3 debemos definir un ancho de 400
-pixeles, un alto de 300 pixeles, quedar centrada y con margen automático.
