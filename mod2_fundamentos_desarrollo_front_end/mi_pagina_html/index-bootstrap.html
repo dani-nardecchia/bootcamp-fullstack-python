@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi pagina - con Bootstrap</title>
+  <!--esto es para linkear nuestro archivo CSS-->
+    <link rel="stylesheet" href="ASSETS/CSS/styles.css">
+<!--Aca van los links de bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg-light-blue">
+    <div class="container">
+        <!--aqui esta la navbar-->
+        <nav class="navbar navbar-dark bg-info text-white p-3
+        d-flex justify-content-between align-items-center">
+              <a class="navbar-brand" href="#">Mi página!</a>
+              <div class="d-flex flex-column flex-md-row">
+                <span class="m-4">
+                    <i class="fa-solid fa-images"></i>
+                    <a href="#" class="text-white">Mis fotos</a>
+                </span>
+                <span class="m-4">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <a href="#" class="text-white">Mis proyectos</a></span>
+              </div>
+        </nav>
+        <!--esta seria mi seccion hero-->
+        <section>
+            <div class="container m-3 just">
+                <div class="row align-items-center
+                rounded-3 border border-dark">
+                    <div class="col-2 d-none d-md-block"></div>
+
+                    <div class="col-12 col-md-8">
+                        <h1 class="display-5 fw-bold text-center">
+                            Bienvenido a mi página
+                        </h1>
+                        <p class="m-3 text-center">
+                            Aquí presento mis fotografias de flora y fauna nativa
+                            y proyectos en los que estoy trabajando. 
+                            <br>
+                            Sientete libre de explorar!
+                        </p>
+                    </div>
+                    <div class="col-2 d-none d-md-block"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--aca iran los articulos-->
+        <section>
+            <div class="container p-3">
+                <div class="row justify-content-center">
+                    <article class="col-12 col-md-8 p-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Aprendiendo Front-end 
+                                </h5>
+                                <p>
+                                    Estoy mejorando la pagina sencilla que hice anteriormente, usando bootstrap.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-8 p-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Fotografía 
+                                </h5>
+                                <p>
+                                    Les presento una fotografia de una abeja chilena, Megachile saulcyi alimentandose de una flor nativa, Monina spp. 
+                                    Es una abeja solitaria, que construye nidos en agujeros o cortando hojas. 
+                                </p>
+                                <img src="ASSETS/IMG/D72_9410.JPG" 
+                                alt="Megachile saulcyi - Abeja nativa chilena en Monina spp"
+                                class="img-fluid"
+                                style="width: 400px; height:300px">
+
+                                <button class="btn btn-info mt-2 mx-auto d-block">Ver más</button>                            
+                            </div>
+                        </div>
+                    </article>
+
+                    <aside class="col-12 col-md-4 m-4">
+                        <div class="card">
+                            <h5>Algunos enlaces útiles!</h5>
+                            <a href="https://www.w3.org/developers/tools/" class="link-info">Validación de codigo cortesía de W3C.</a><br>
+                            <a href="https://codepen.io" class="link-info">Página web para escribir código y ver su ejecución inmediata.</a>
+                        </div>
+                        <div class="alert alert-success mt-2 text-center" role="alert">Sitio actualizado correctamente.</div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    
+    </div>
+</body>
+</html>
