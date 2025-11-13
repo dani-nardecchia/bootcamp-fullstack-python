@@ -1,0 +1,4 @@
+- funciones 
+- operadores lógicos 
+- condiciones (if y else)
+- ciclos
