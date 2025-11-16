@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+
+<body id="cuerpo">
+<h1>Ejercicio cuadrados de colores</h1>
+<!--Relizar una pagina que muestre 4 cuadros de colores
+cuando el mouse pase sobre ellos, el color de fondo de toda la pagina
+debe ser el color del cuadrado. Al sacar el mouse, debe volver a blanco-->
+<div class="row">
+    <div class="col-4"></div>
+
+    <div class="col-4">
+        <div class="row">
+            <div class="col-4" style="background-color: rgb(92, 139, 226);" onmouseover="entrar(this)" onmouseleave="salir()">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam ornare turpis, non rhoncus urna malesuada in. Vestibulum mattis placerat dictum. Suspendisse congue sit amet neque in dignissim. Phasellus imperdiet ipsum at mi vestibulum vulputate et vel mi. Donec hendrerit tincidunt nunc quis gravida. Etiam elementum et felis a aliquam. In rhoncus sem a malesuada ultricies. Suspendisse potenti. Cras finibus dolor eu sapien interdum, quis tincidunt dolor gravida. Integer venenatis condimentum urna id mollis. Cras vitae magna leo. Nam tempor eros sit amet ultricies finibus. Cras dignissim quis nunc a ultricies. Nam vel tincidunt ipsum. Pellentesque sit amet diam eget orci commodo consequat. Proin finibus, diam id bibendum scelerisque, tellus lectus varius massa, eget sollicitudin nulla lacus quis lectus. </p>
+            </div>
+            <div class="col-4" style="background-color:rgb(176, 119, 223);" onmouseover="entrar(this)" onmouseleave="salir()">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam ornare turpis, non rhoncus urna malesuada in. Vestibulum mattis placerat dictum. Suspendisse congue sit amet neque in dignissim. Phasellus imperdiet ipsum at mi vestibulum vulputate et vel mi. Donec hendrerit tincidunt nunc quis gravida. Etiam elementum et felis a aliquam. In rhoncus sem a malesuada ultricies. Suspendisse potenti. Cras finibus dolor eu sapien interdum, quis tincidunt dolor gravida. Integer venenatis condimentum urna id mollis. Cras vitae magna leo. Nam tempor eros sit amet ultricies finibus. Cras dignissim quis nunc a ultricies. Nam vel tincidunt ipsum. Pellentesque sit amet diam eget orci commodo consequat. Proin finibus, diam id bibendum scelerisque, tellus lectus varius massa, eget sollicitudin nulla lacus quis lectus. </p>
+            </div>
+            <div class="col-4" style="background-color:aquamarine;" onmouseover="entrar(this)" onmouseleave="salir()">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam ornare turpis, non rhoncus urna malesuada in. Vestibulum mattis placerat dictum. Suspendisse congue sit amet neque in dignissim. Phasellus imperdiet ipsum at mi vestibulum vulputate et vel mi. Donec hendrerit tincidunt nunc quis gravida. Etiam elementum et felis a aliquam. In rhoncus sem a malesuada ultricies. Suspendisse potenti. Cras finibus dolor eu sapien interdum, quis tincidunt dolor gravida. Integer venenatis condimentum urna id mollis. Cras vitae magna leo. Nam tempor eros sit amet ultricies finibus. Cras dignissim quis nunc a ultricies. Nam vel tincidunt ipsum. Pellentesque sit amet diam eget orci commodo consequat. Proin finibus, diam id bibendum scelerisque, tellus lectus varius massa, eget sollicitudin nulla lacus quis lectus. </p>
+            </div>
+        </div> 
+    </div>
+    <div class="col-4"></div>   
+</div>
+
+<script src="js/ej-cuadros-colores.js"></script>
+</body>
+
+</html>
