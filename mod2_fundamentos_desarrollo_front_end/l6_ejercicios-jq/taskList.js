@@ -39,7 +39,10 @@ $(document).ready(function(){
         "padding" : "1px", 
     })
 
-    $(checkBox).on("change", function(){
+    //esto dice
+    //en tabla (elemento principal que se crea al comienzo)
+    //si hay un cambio en el input checkbox, corre esta funcuion 
+    $("#tabla").on("change","input[type=checkbox]", function(){
         $(this).closest("tr").fadeOut("slow");
     })
 
@@ -48,5 +51,6 @@ $(document).ready(function(){
 
 })
 })
+
 
 console.log("JS cargado!")
