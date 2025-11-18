@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskList</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <div class=container>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">
+            <h1 class="card-title">TaskList</h1>
+            <div class="d-flex justify-content-between">
+              <h3>Tarea</h3>
+              <h3>Prioridad</h3>
+            </div>
+          </div>
+          <div class="card-body">
+            <!--aca ira la lista que va creciendo-->
+            <div>
+              <table class="table"><tbody id="tabla"></tbody></table>
+              <ul id="tabla"></ul>
+            </div>
+
+            <!--aca agrego las tareas-->
+            <div class="d-flex">
+              <label for="tarea" class="m-1">Nueva tarea:</label>
+              <input type="text" id="tarea">
+              
+              <label for="prioridad" class="m-1">Prioridad:</label>
+              <select name="select" id="prioridad">
+                <option value="Alta">Alta</option>
+                <option value="Media">Media</option>
+                <option value="Baja">Baja</option>
+              </select> 
+            </div>
+            
+            <button class="btn btn-info m-1" id="raulito">Agregar</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </div>
+
+  <script src="taskList.js"></script>
+
+</body>
+</html>
