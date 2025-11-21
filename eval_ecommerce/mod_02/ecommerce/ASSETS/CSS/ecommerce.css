@@ -1,0 +1,12 @@
+.mi-imagen{
+    width: 500px;
+    height: auto;
+    margin: 5px;
+}
+
+.card-img-top{
+    height: 200px;
+    /*el object fit cover le dice has que esta imagen se ajuste al tamaño que te di
+    aunque tengas q recortarla, pero no la deformes  */
+    object-fit: cover;
+}
