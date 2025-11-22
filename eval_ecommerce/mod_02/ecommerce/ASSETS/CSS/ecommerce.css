@@ -10,3 +10,7 @@
     aunque tengas q recortarla, pero no la deformes  */
     object-fit: cover;
 }
+
+.cursiva{
+    font-style: italic;
+}
