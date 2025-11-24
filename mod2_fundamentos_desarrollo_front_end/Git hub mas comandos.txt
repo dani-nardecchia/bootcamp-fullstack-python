@@ -1,0 +1,20 @@
+Git hub 
+Puedo borrar un ultimo commit realizado. 
+
+Primero: git log para saber el hash del commit que quiero borrar. 
+Ej: 
+commit 4a50a16c826e8e44bf3496cab46c63a91def3e55 (HEAD -> main, origin/main, origin/HEAD)
+Author: Dani <misskumi123@gmail.com>
+Date:   Mon Nov 24 18:42:45 2025 -0300
+
+    aqui añadi mi archivo de error
+
+Aca hay un commit sacado del log, el hash es el numero después de commit. 
+
+Si ya tengo el numero, pongo git reverse seguido del hash y git borrará lo que hice en el ultimo commit después de una verificación. 
+
+Ademas existe git reset --hard (seguido de un commit)
+- borra los cambios que se hayan hecho hasta el hash que le doy, volviendo a ese 
+- pero además borra todo rastro de los cambios del log de commit 
+
+
