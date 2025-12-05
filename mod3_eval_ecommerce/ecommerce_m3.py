@@ -1,16 +1,4 @@
-# definiremos el menu principal LISTO 
-
-def mostrar_menu():
-    saludo = "Bienvenido/a a tu Ecommerce" \
-        "\n 1. Ver catálogo de productos" \
-        "\n 2. Buscar producto por nombre o categoría" \
-        " \n 3. Agregar producto al carrito  " \
-        "\n 4. Ver carrito y total" \
-        "\n 5. Vaciar carrito " \
-        "\n 0. Salir"
-    print(saludo)
-
-# creacion de diccionarios con productos LISTO  
+# creacion de diccionarios con productos 
 #Creamos los diccionarios con los datos de las plantas, prints y botellas con imagenes que tendria mi tienda ficticia 
 planta_1 = {'id': 'p1', 'nombre' :'Planta de Alstromeria pellegrina', 'categoria': "planta" , 'precio' : 5000}
 planta_2 = {'id': 'p2', 'nombre' :'Planta de Puya venusta', 'categoria': "planta" , 'precio' : 1500}
@@ -27,7 +15,7 @@ bot_3= {'id': 'b3', 'nombre' :'Botella de Solanum maritimum', 'categoria': "bote
 #Creamos una lista con los diccionarios
 productos = [planta_1, planta_2, planta_3, print_1, print_2, print_3, bot_1, bot_2, bot_3]
 
-#  Opcion 1: Ver catalogo de productos  LISTO 
+#  Opcion 1: Ver catalogo de productos 
 def ver_catalogo():
     print(f'{"-" * 40 }Catálogo de productos {"-" * 40 }')
     print(f'{"Nombre":<45}{"Categoria":<20}{"Precio":<10}{"Id":<5}')
@@ -82,9 +70,13 @@ def agregar_carrito():
 # - Mostrar el total a pagar: suma de todos los subtotales.
 
 def ver_carrito():
+    if not carrito:
+        print("Su carrito se encuentra vacío.")
+        return
+    
     print(f'{"-" * 40 }Carrito {"-" * 40 }')
     print(f'{"Id":5}{"Nombre":45}{"Cantidad":10}{"Precio":10}{"Subtotal":10}')
-
+     
     #hare una funcion para poder traer el id y el precio
     #aprovechando que ya tengo el nombre para hacer la busqueda 
 
@@ -107,6 +99,8 @@ def ver_carrito():
         
     print(f"\n Su total a pagar es: {total}")
 
+    
+
 
 #Vaciar carrito (opción 5)
 #- Dejar el carrito vacío y mostrar un mensaje de confirmación
@@ -114,7 +108,7 @@ def ver_carrito():
 
 def vaciar_carrito():
     carrito = []
-    print("Su carrito ha sido vaciado.")
+    print("\n Su carrito ha sido vaciado.")
 
 #ahora debo juntar todas las funciones individuales en una que funcione llamando al menu 
 #aca tengo la funcion para mostrar el menu
@@ -125,7 +119,7 @@ def mostrar_menu():
         "\n 3. Agregar producto al carrito  " \
         "\n 4. Ver carrito y total" \
         "\n 5. Vaciar carrito " \
-        "\n 0. Salir"
+        "\n 0. Salir \n"
     print(saludo)
 
 def main_eccomerce():
@@ -133,7 +127,7 @@ def main_eccomerce():
 
     while opcion != "0":
         mostrar_menu()
-        opcion = input("Ingrese la opcion que desea (0 - 5): ")
+        opcion = input("Ingrese la opcion que desea (0 - 5):\n ")
         
         if opcion == "1":
             ver_catalogo()
