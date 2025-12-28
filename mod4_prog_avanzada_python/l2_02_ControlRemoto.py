@@ -8,6 +8,13 @@ class ControlRemoto:
         #ponemos un mensajito 
         print("Control para dispositivo ", dispositivo, "creado.")
     
+    #aca creamos la carta de presentacion 
+    def __str__(self):
+        return (f"Dispositivo: {self.get_dispositivo()}\n"
+                f"Estado: {self.get_estado()}\n"
+                f"Canal: {self.get_canal()}\n"
+                f"Volumen: {self.get_volumen()}")
+    
     #==Getters==#
     def get_dispositivo(self):
         return self.__dispositivo
@@ -31,22 +38,24 @@ class ControlRemoto:
         if self.__encendido:
             if 1 <= nuevo_canal <= 99:
                 self.__canal = nuevo_canal
+                print("se ha cambiado el canal a", self.__canal)
+
             else:
                 print("Canal fuera de rango. Eliga entre 1 - 99")
         else: 
-            print("El dispositivo esta apagado")
-        print("se ha cambiado el canal a ", self.__canal)
-
+            print("No se puede cambiar canal, el dispositivo esta apagado")
+        
     #set_volumen(nuevo_volumen): cambia el volumen (solo si está encendido y entre 0-100)
     def set_volumen(self, nuevo_volumen):
         if self.__encendido: 
             if 0 <= nuevo_volumen <= 100:
                 self.__volumen = nuevo_volumen
+                print("se ha cambiado el volumen a", self.__volumen)
             else:
                 print("Volumen debe ser entre 0 - 100.")
         else:
-            print("El dispositivo esta apagado")
-        print("se ha cambiado el volumen a ", self.__volumen)
+            print("No se puede cambiar volumen, el dispositivo esta apagado")
+        
     
     #set_encendido(estado): enciende/apaga (True/False)
     #aca no hay validacion, solo cambiamos el atributo al estado contrario
@@ -110,14 +119,54 @@ class ControlRemoto:
             canal = self.get_canal()
             cambio = 1 if comando == "siguiente_canal" else -1 
             self.set_canal(canal + cambio)
-            
+        
+        else:
+            print("Comando no reconocido")
+
+    
+
+#=====PROBANDO LA CLASE=====#
+
+#Crea una instancia de ControlRemoto llamada tv
+#Pásale como parámetro el nombre "Televisor Sala"
+
+tv = ControlRemoto("Televisor Sala")
+
+#Usa print() para mostrar el dispositivo obtenido con get_dispositivo()
+print(f"El resultado del get_dispositivo es: {tv.get_dispositivo()}")
+#Usa print() para mostrar el estado obtenido con get_estado()
+print(f"El resultado del get_estado es: {tv.get_estado()}\n")
+#Deja una línea en blanco después con print()
 
         
-        
+#llama a controlar("encender") para encender el televisor
+tv.controlar("encender")
+# Llama a controlar("canal", 25) para cambiar al canal 25
+tv.controlar("canal", 25)
+# Llama a controlar("volumen", 60) para ajustar el volumen a 60
+tv.controlar("volumen", 60)
+# Llama a controlar("subir_volumen") para aumentar el volumen 10 puntos
+tv.controlar("subir_volumen")
+# Llama a controlar("siguiente_canal") para avanzar un canal
+tv.controlar("siguiente_canal")
+#probar poner un comando que no exista 
+tv.controlar("otro_comando")
 
+#Usa set_canal(30) para cambiar directamente al canal 30
+tv.set_canal(30)
 
+#Usa set_volumen(50) para ajustar directamente el volumen a 50
+tv.set_volumen(50)
+
+#Imprime el objeto tv directamente usando print(tv)
+print(tv)
 
             
-
-
+#Llama a controlar("apagar") para apagar el televisor
+tv.controlar("apagar")
+# Intenta usar set_canal(100) (debe fallar porque está apagado)
+tv.set_canal(100)
+# Intenta usar set_canal(150) (debe fallar por canal inválido
+tv.controlar("encender")
+tv.set_canal(150)
 
