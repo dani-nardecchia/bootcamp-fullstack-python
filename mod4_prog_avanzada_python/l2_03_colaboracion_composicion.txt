@@ -1,0 +1,34 @@
+getters y setters 
+La idea es garantizar la encapsulación de datos, es decir, evitar el acceso directo por parte de otros usuarios u otras clases. 
+
+Con los getters y setters agregamos una lógica para obtener y establecer un valor, los cuales además nos dejan agregar alguna lógica de validación, para revisar que los datos que se están ingresando sean correctos. 
+
+Los getters nos permiten mirar los atributos:
+
+def get_canal(self):
+    return self.__canal 
+
+Esto me permite saber el valor del atributo canal 
+
+Los setters me dejan modificar los atributos, generalmente aplicando alguna validación 
+
+def set_volumen(self, nuevo_volumen):
+    if not self.__verificar_encendido():
+	return 
+
+    if 0 <= nuevo volumen <= 100:
+	self.__volumen = nuevo_volumen 
+	print(f"{self.__dispositivo} volumen cambiado a: {self.__volumen}")
+
+
+Sobrecarga de métodos 
+Se refiere a la posibilidad de que un mismo método dentro de una clase, permita hacer cosas distintas en función de los parámetros que le damos. 
+
+en la definición del método se escribe con un asterisco 
+def llamar(self, *destinos):
+en este ejemplo si destinos es 
+- 1: es una llamada personal a un numero 
+- 2: es una llamada en conferencia a dos personas 
+- 3: es una llamada grupal a un numero de personas 
+
+Aca el método hara distintas cosas dependiendo de cuantos destinos le entreguemos 
