@@ -1,34 +1,10 @@
-getters y setters 
-La idea es garantizar la encapsulación de datos, es decir, evitar el acceso directo por parte de otros usuarios u otras clases. 
+La colaboración es una relación entre clases donde una clase contiene a otra, pero sin una dependencia total. Puedo por ejemplo eliminar un objeto de la clase todo, sin eliminar las clases o objetos que depende de ella. 
 
-Con los getters y setters agregamos una lógica para obtener y establecer un valor, los cuales además nos dejan agregar alguna lógica de validación, para revisar que los datos que se están ingresando sean correctos. 
+Ej: puedo tener una clase Empresa y una clase Cliente, la empresa agrupa a varios clientes, pero esos clientes pueden existir por si solos o pertenecer a otras empresas. 
 
-Los getters nos permiten mirar los atributos:
+La composición es una relación fuerte entre clases, donde los objetos contenidos no pueden existir por separado del objeto principal. 
+- los componentes no pueden ser compartidos con otros objetos 
+- si el objeto principal se elimina, sus componentes también 
 
-def get_canal(self):
-    return self.__canal 
+Ej: tenemos una clase empresa, compuesta por varios objetos empleado. Si la empresa deja de existir, también desaparecen los empleados. 
 
-Esto me permite saber el valor del atributo canal 
-
-Los setters me dejan modificar los atributos, generalmente aplicando alguna validación 
-
-def set_volumen(self, nuevo_volumen):
-    if not self.__verificar_encendido():
-	return 
-
-    if 0 <= nuevo volumen <= 100:
-	self.__volumen = nuevo_volumen 
-	print(f"{self.__dispositivo} volumen cambiado a: {self.__volumen}")
-
-
-Sobrecarga de métodos 
-Se refiere a la posibilidad de que un mismo método dentro de una clase, permita hacer cosas distintas en función de los parámetros que le damos. 
-
-en la definición del método se escribe con un asterisco 
-def llamar(self, *destinos):
-en este ejemplo si destinos es 
-- 1: es una llamada personal a un numero 
-- 2: es una llamada en conferencia a dos personas 
-- 3: es una llamada grupal a un numero de personas 
-
-Aca el método hara distintas cosas dependiendo de cuantos destinos le entreguemos 
