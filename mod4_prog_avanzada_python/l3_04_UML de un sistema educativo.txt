@@ -1,0 +1,16 @@
+UML de un sistema educativo. 
+
+El modelo que explica las siguientes relaciones.
+
+En una escuela hay estudiantes, profesores y materias (o asignaturas). 
+Cada profesor puede enseñar varias materias, pero cada materia debe tener un profesor asignado. 
+Cada estudiante se inscribe en varias materias. 
+Las materias pueden tener varias tareas, que los estudiantes realizan y los profesores revisan. 
+
+La clase Profesor tiene como atributo su nombre, su id de empleado, especialidad y las materias que enseñan. Sus métodos incluyen poder asignar tareas a los estudiantes y revisar las tareas realizadas por ellos. 
+
+La clase Alumno tiene como atributo su nombre, su numero de matricula, su promedio general y su carga académica. Sus métodos incluyen poder inscribirse en materias y entregar tareas, el que inicia la acción de entregar la tarea.
+
+La clase Materia tiene como atributo su nombre, código de la materia y los créditos que valen. Sus métodos incluyen solo los getters y setters básicos. 
+
+La clase Tarea tiene como atributo el nombre de la tarea, la fecha de entrega y la nota. Sus métodos incluyen los setters y getter básicos y un método entregar_tarea que cambia el estado del objeto a una tarea entregada. 
