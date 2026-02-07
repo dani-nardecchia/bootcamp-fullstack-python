@@ -1,4 +1,4 @@
-#lo que tenemos que hacer es recibir un archibo con tareas en este formato
+#lo que tenemos que hacer es recibir un archivo con tareas en este formato
 #[ ]|Estudiar Python|2023-10-25 09:15:2
 #usando la clase GestorTareas, lo abrimos y 
 #dividimos la string obtenida para pasarselas a la clase Tarea 

@@ -1,0 +1,19 @@
+Sistema educativo en código 
+
+En una escuela hay estudiantes, profesores y materias (o asignaturas). 
+
+Se parte con la clase Persona, para demostrar el concepto de herencia, ya que las clases de Alumno y Profesor heredan de ella. 
+
+La clase Persona tiene como atributos el nombre, rut y sexo. Posee sus métodos getter y setter. 
+
+La clase Alumno tiene como atributo todos los atributos de persona mas su numero de matricula, su promedio general y su carga académica. 
+
+Sus métodos incluyen además de getter y setter, poder inscribirse en materias y entregar tareas, el que inicia la acción de entregar la tarea.
+
+La clase Profesor tiene como atributo los atributos de persona mas su id de empleado, especialidad y las materias que enseñan. Sus métodos incluyen los getter y setter, además de poder asignar tareas a los estudiantes y revisar las tareas realizadas por ellos. 
+
+La clase Materia tiene como atributo su nombre, código de la materia y los créditos que valen. Sus métodos incluyen solo los getters y setters básicos. 
+
+La clase Tarea tiene como atributo el nombre de la tarea, la fecha de entrega y la nota. Además tiene como atributo la materia a la que pertenece, porque es una clase que depende de Materia, su relación es de composición. 
+
+Sus métodos incluyen los setters y getter básicos y un método entregar_tarea que cambia el estado del objeto a una tarea entregada. 
